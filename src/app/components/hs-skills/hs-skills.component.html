@@ -1,0 +1,44 @@
+<section class="seccion-estudios">
+    <div class="barra">
+        <h1 class="titulo">Tecnologías</h1>
+        <div>
+            <button type="button" class="botonEdit" style="border: none" (click)="crear()" *ngIf="verif"> 
+                <i class="fas fa-plus" style="color: green"></i>
+            </button>
+        </div>
+    </div>
+    <div class="lista-tecnologias">
+        <div class="item" *ngFor = "let tecnologia of skill">
+            <!-- <div >
+                <h5 class="titulo-tecnologia">{{tecnologia.titulo}}</h5>
+                <img src="{{tecnologia.imagen}}">
+            </div> -->
+            <div>
+                <circle-progress 
+                    [percent]="(tecnologia.porcentaje)" 
+                    [radius]="90" 
+                    [imageSrc]="(tecnologia.imagen)" 
+                    [showImage]="true" 
+                    [imageHeight]="70" 
+                    [imageWidth]="70" 
+                    [showUnits]="false"
+                    [showSubtitle]="false" 
+                    [outerStrokeWidth]="16" 
+                    [innerStrokeWidth]="2" 
+                    [outerStrokeColor]="'#0379D6'"
+                    [innerStrokeColor]="'white'" 
+                    [animation]="true" 
+                    [animationDuration]="600">
+                </circle-progress>
+            </div>
+            <div>
+                <button type="button" class="botonEdit" (click)="editar(tecnologia.id)" *ngIf="verif">
+                    <i class="fas fa-pen"></i>
+                </button>
+                <button type="button" class="botonEdit" (click)="borrar(tecnologia.id)" *ngIf="verif"> 
+                    <i class="fas fa-times" style="color: red; font-size: 20px"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

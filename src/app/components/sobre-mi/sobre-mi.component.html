@@ -1,0 +1,56 @@
+<div id="sobreMi" class="seccion-sobreMi">
+    <div class="barra">
+        <h2 class="titulos-secciones">Sobre Mí</h2>
+    </div>
+    <div class="contenedor-sobreMi">
+        <div class="parrafoAbout">
+            <p>
+                !Hola! Mi nombre es Diego, vivo en Corrientes - Argentina y soy Full Stack Developer Jr. 
+                Comencé a estudiar diseño web en el 2020 y desde entonces mi interés fue aumentando, 
+                realicé cursos tanto como de Diseñador web  como de Full Stack Developer. En este portflio verás 
+                información sobre mis estudios y los proyectos que desarrollé.
+            </p>
+            <p>
+                Te mando un saludo y gracias por pasarte por mi Portfolio Web!
+            </p>
+        </div>
+        <div class="perfil">
+            <img id="img-perfil" src="{{persona.imagen}}">
+        </div>
+    </div>
+    <div class="barra">
+        <h2 class="titulos-secciones">Experiencia</h2>
+        <div>
+            <button type="button" class="botonEdit" style="border: none" (click)="crear()" *ngIf="verif"> 
+                <i class="fas fa-plus" style="color: green"></i>
+            </button>
+        </div>
+    </div>
+    <div class="contenedor-experiencia">
+        <ul>
+            <li *ngFor="let exp of experiencia">
+                <div class="barraExp">
+                    <div class="tituloExp">
+                        <img class="logo" src="{{exp.logo}}">
+                        <h2>{{exp.empresa}}</h2>
+                    </div>
+                    <div class="botonExp">
+                        <button type="button" class="botonEdit" (click)="editar(exp.id)" *ngIf="verif">
+                            <i class="fas fa-pen"></i>
+                        </button>
+                        <button type="button" class="botonEdit" (click)="borrar(exp.id)" *ngIf="verif">
+                            <i class="fas fa-times" style="color: red; font-size: 20px"></i>
+                        </button>
+                    </div>
+                </div>
+                <h6><i style="color: #2ECC71 ">Rol-Actividad:  </i>{{exp.rolActividad}}</h6>
+                <br>
+                <pre class="parrafoExp">{{exp.descripcion}}</pre>
+                <!-- <p class="parrafoExp">{{exp.descripcion}}</p> -->
+                <h6>{{exp.fechaInicio}} - {{exp.fechaFin}}</h6>
+                <hr>
+                <br>
+            </li>
+        </ul>
+    </div>
+</div>

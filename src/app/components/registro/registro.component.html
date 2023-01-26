@@ -1,0 +1,47 @@
+<div class="modalCaja">
+    <div class="formulario">
+        <div class="header">
+            <h2>Registrarse</h2>
+            <div>
+                <a routerLink="">
+                    <button type="button" class="botonEdit">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <form class="col"  (ngSubmit)="registrar()"> 
+            <!-- Nombre -->
+            <div class="campos"> 
+                <label for="nombre" class="col-form-label">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" [(ngModel)]="nombre"> 
+            </div>
+
+            <!-- Nombre Usuario -->
+            <div class="campos"> 
+                <label for="nombreUsuario" class="col-form-label">Usuario</label>
+                <input type="text" id="nombre" name="nombreUsuario" class="form-control" [(ngModel)]="nombreUsuario"> 
+            </div>
+             
+            <!-- Email -->
+            <div class="campos"> 
+                <label for="email" class="col-form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" [(ngModel)]="email"> 
+            </div>
+
+            <!-- Contraseña -->
+            <div class="campos">
+                <label for="password" class="col-form-label">Contraseña</label>
+                <input type="text" id="password" name="password" class="form-control" [(ngModel)]="password">
+            </div>
+
+            <div class="footer">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+                <div class="registro">
+                    <p>Ya tienes cuenta?</p>
+                    <a routerLink="../">Iniciar Sesion</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

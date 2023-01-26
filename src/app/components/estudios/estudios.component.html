@@ -1,0 +1,35 @@
+<div id="estudios" class="seccion-estudios">
+    <div class="barra">
+        <h2 class="titulos-secciones">Mis Estudios</h2>
+        <div>
+            <button type="button" class="botonEdit" style="border: none" (click)="crear()" *ngIf="verif"> 
+                <i class="fas fa-plus" style="color: green"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="caja-estudios">
+        <!-- Contenido -->
+        <div class="contenido-secciones" *ngFor="let est of estudio">
+            <div class="caja">
+                <div class="header">
+                    <h3 class="tituloEstudio">{{est.titulo}}<a href="{{est.link}}" target="_blank">@Link</a></h3>
+                    <div>
+                        <button type="button" class="botonEdit" (click)="editar(est.id)" *ngIf="verif">
+                            <i class="fas fa-pen"></i>
+                        </button>
+                        <button type="button" class="botonEdit" (click)="borrar(est.id)" *ngIf="verif"> 
+                            <i class="fas fa-times" style="color: red; font-size: 20px"></i>
+                        </button>
+                    </div>
+                </div>
+                <h5 class="subtituloEstudio">{{est.fechaInicio}} - {{est.fechaFin}}</h5>
+                <p class="descripcionEstudio">{{est.descripcion}}</p>
+                <a class="enlaces" (click)="modal.showModal()">Ver certificado</a>
+                <modal-certificados #modal [imagen]="est.imagen"></modal-certificados>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+

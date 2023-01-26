@@ -1,0 +1,53 @@
+<div class="formulario">
+    <div class="modalCaja">
+        <div class="login">
+            <h2>Editar registro de {{experiencia.empresa}}</h2>                 
+            <div>
+                <a routerLink="">
+                    <button type="button" class="botonEdit">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <form class="col" [formGroup]="editForm" (ngSubmit)="editSM(editForm.value)">
+            <div class="cajaForm">
+                <div>
+                    <div class="campos">
+                        <label for="empresa" class="col-form-label">Empresa</label>
+                        <input type="text"  formControlName="empresa" class="form-control" [(ngModel)]="experiencia.empresa">
+                    </div>
+                    <div class="campos">
+                        <label for="logo" class="col-form-label">Logo</label>
+                        <input type="text" formControlName="logo" class="form-control" [(ngModel)]="experiencia.logo">
+                    </div>
+                    <div class="campos">
+                        <label for="rolActividad" class="col-form-label">Rol/Actividad</label>
+                        <input type="text" formControlName="rolActividad" class="form-control" [(ngModel)]="experiencia.rolActividad">
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="campos">
+                        <label for="fechaInicio" class="col-form-label">Fecha de Inicio</label>
+                        <input type="text" formControlName="fechaInicio" class="form-control" placeholder="YYYY-MM-DD" [(ngModel)]="experiencia.fechaInicio">
+                    </div>
+                    <div class="campos">
+                        <label for="fechaFin" class="col-form-label">Fecha de Fin</label>
+                        <input type="text" formControlName="fechaFin" class="form-control" placeholder="YYYY-MM-DD" [(ngModel)]="experiencia.fechaFin">
+                    </div>
+                </div>
+                <div>
+                    <div class="campos">
+                        <label for="descripcion" class="col-form-label">Descripción</label>
+                        <textarea class="form-control" formControlName="descripcion" cols="30" rows="8" [(ngModel)]="experiencia.descripcion"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>

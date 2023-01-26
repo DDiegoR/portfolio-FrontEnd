@@ -1,0 +1,112 @@
+.seccion-sobreMi{
+    padding: 90px 20px 0px 10%;
+    height: 100%;
+}
+.seccion-sobreMi .parrafoAbout{
+    color: white;
+}
+.contenedor-sobreMi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 70vh;
+}
+.parrafoAbout{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+.parrafoAbout p{
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    font-size: 19px;
+    margin-top: 10px;
+    width: 80%;
+}
+.perfil{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex: 0.5;
+    width: 100%;
+    height: 100%;
+}
+#img-perfil{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 70%;
+    border-radius: 40px;
+    border: solid 2px;
+    border-color: #0379D6;
+}
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.botonEdit {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 15px;
+}
+.botonEdit i {
+    color: white;
+    margin: 5px 3px;
+}
+.contenedor-experiencia {
+    color: white;
+    width: 90%;
+}
+.contenedor-experiencia ul {
+    list-style: none;
+}
+.barraExp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.barraExp h2 {
+    color: #2ECC71;
+}
+.tituloExp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.botonExp {
+    display: flex;
+    flex-direction: row;
+}
+.botonExp>.botonEdit {
+    border: none;
+}
+.logo {
+    width: 10%;
+}
+.parrafoExp {
+    margin-left: 15px;
+    color: white;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    font-size: 14px;
+}
+.parrafoExp::before{
+    content: "▹";
+    position: absolute;
+    left: 165px;
+    color: #2ECC71;
+}
+
+@media only screen and (max-width: 768px){
+    .contenedor-sobreMi{
+        display: block;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .seccion-sobreMi {
+        padding: 90px 5px 0px 10%;
+    }
+}

@@ -1,0 +1,89 @@
+.modalCaja{
+    padding: 5% 25% 0 35%;
+}
+h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+.botonEdit {
+    background-color: transparent;
+    border: none;
+}
+.botonEdit i {
+    font-size: 30px;
+    color: red;
+}
+.formulario form {
+    color: #0379D6;
+}
+.error {
+    color: red;
+}
+.campos{
+    margin-bottom: 15px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.registro p {
+    margin: 0;
+    color: white;
+}
+.registro a {
+    margin: 0;
+    margin-left: 17px;
+}
+.formulario {
+    width: 66%;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) { 
+    .modalCaja{
+        padding: 20px 15% 0 35%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 900px) { 
+    .footer button {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 768px) { 
+    .modalCaja{
+        padding: 20px 5% 0 35%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 576px) { 
+    .modalCaja{
+        padding: 10px 20px;
+    }
+    .formulario {
+        width: 100%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 360px) { 
+    .formulario {
+        width: 100%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}

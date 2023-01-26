@@ -1,0 +1,38 @@
+<div class="contenedorCentro">
+    <a routerLink="edit-form">
+        <button type="button" class="botonEdit" *ngIf="verif">
+            <i class="fas fa-pen"></i>
+        </button>
+    </a>
+    <div class="contenedorCentral">
+        <div id="contenedorCentral">
+            <div class="titular" >
+                <h1 class="diego">{{persona.nombre + ' ' + persona.apellido}}</h1>
+            </div>
+            <div class="cajaRol">
+                <h3 class="rol">{{persona.rolTrabajo}}</h3>
+            </div>
+        </div>   
+    </div>
+    <div class="logoCentral">
+        <div>
+            <img src="assets/imagenes/LogoDR-blueGrande.png" id="logoCentral" alt="LogoDR">
+        </div>
+    </div>
+</div>
+<!-- IMAGENES ANIMADAS -->
+<div class="imagenesAnimadas">
+    <img class="imagenes" id="triangulo1" src="assets/iconos/triangulo.png">
+    <img class="imagenes" id="triangulo2" src="assets/iconos/triangulo.png">
+    <img class="imagenes" id="triangulo3" src="assets/iconos/triangulo.png">
+    <img class="imagenes" id="circulo1" src="assets/iconos/circulo.png">
+    <img class="imagenes" id="circulo2" src="assets/iconos/circulo.png">
+    <img class="imagenes" id="circulo3" src="assets/iconos/circulo.png">
+    <img class="imagenes" id="cuadrado1" src="assets/iconos/cuadrado.png">
+    <img class="imagenes" id="cuadrado2" src="assets/iconos/cuadrado.png">
+    <img class="imagenes" id="cuadrado3" src="assets/iconos/cuadrado.png">
+    <img class="imagenes" id="equis1" src="assets/iconos/equis.png">
+    <img class="imagenes" id="equis2" src="assets/iconos/equis.png">
+    <img class="imagenes" id="equis3" src="assets/iconos/equis.png">
+</div>
+<!-- FIN IMAGENES ANIMADAS -->

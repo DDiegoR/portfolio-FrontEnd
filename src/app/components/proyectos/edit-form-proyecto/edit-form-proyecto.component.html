@@ -1,0 +1,43 @@
+<div class="formulario">
+    <div class="modalCaja">
+        <div class="login">
+            <h2>Editar registro de {{proyecto.titulo}}</h2>                 
+            <div>
+                <a routerLink="">
+                    <button type="button" class="botonEdit">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <form class="col" [formGroup]="editForm" (ngSubmit)="editProyecto(editForm.value)">
+            <div class="cajaForm">
+                <div>
+                    <div class="campos">
+                        <label for="titulo" class="col-form-label">Titulo</label>
+                        <input type="text"  formControlName="titulo" class="form-control" [(ngModel)]="proyecto.titulo">
+                    </div>
+                    <div class="campos">
+                        <label for="link" class="col-form-label">link</label>
+                        <input type="text" formControlName="link" class="form-control" [(ngModel)]="proyecto.link">
+                    </div>
+                    <div class="campos">
+                        <label for="imagen" class="col-form-label">Imagen</label>
+                        <input type="text" formControlName="imagen" class="form-control" [(ngModel)]="proyecto.imagen">
+                    </div>
+                </div>
+                <div>
+                    <div class="campos">
+                        <label for="descripcion" class="col-form-label">Descripción</label>
+                        <textarea class="form-control" formControlName="descripcion" cols="30" rows="8" [(ngModel)]="proyecto.descripcion"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
+

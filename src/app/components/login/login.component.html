@@ -1,0 +1,40 @@
+<div class="modalCaja">
+    <div class="login formulario">
+        <div class="header">
+            <h2>Iniciar Sesión</h2>
+            <div>
+                <a routerLink="">
+                    <button type="button" class="botonEdit">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <form class="col" #f="ngForm" (ngSubmit)="onLogin()" novalidate> 
+             
+            <!-- Email -->
+            <div class="campos"> 
+                <label for="nombreUsuario" class="col-form-label">Nombre de usuario</label>
+                <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control" [(ngModel)]="nombreUsuario"required> 
+            </div>
+
+            <!-- Contraseña -->
+            <div class="campos">
+                <label for="password" class="col-form-label">Contraseña</label>
+                <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password">
+            </div>
+
+            <div class="footer">
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                <div class="registro">
+                    <p>No tienes cuenta?</p>
+                    <a routerLink="registro">Registrarse</a>
+                </div>
+            </div>
+        </form>
+        <div class="aviso">
+            <p>AVISO: Al registrarte no tendras ninguna funcionalidad extra, 
+                solo el usuario administrador tiene acceso a la edición de la página.</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+.seccion-estudios{
+    padding: 90px 20px 0 10%;
+    /* margin: 0px auto; */
+    height: 100%;
+    min-height: 80vh;
+    min-width: 420px;
+}
+.caja-estudios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    color: #94959C;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+}
+.contenido-secciones{
+    margin-top: 20px;
+    position: relative;
+    width: 45%;
+    min-height: 40vh;
+    margin-left: 30px;
+}
+.tituloEstudio{
+    margin: 0;
+    font-size: 22px;
+    color: white;
+}
+.tituloEstudio a{
+    text-decoration: none;
+    color: #0379D6;
+    
+}
+.subtituloEstudio{
+    margin: 0px;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.descripcionEstudio{
+    border: 1 solid white;
+    margin: 20px 20px 20px 15px;
+    max-width: 500px;
+}
+.descripcionEstudio::before{
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #0379D6;
+}
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.caja {
+    min-width: 60%;
+    min-height: 250px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 60%;
+}
+.botonEdit {
+    background-color: transparent;
+    border: none;
+}
+.botonEdit i {
+    color: white;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 768px){
+    .caja-estudios {
+        display: block;
+        padding-right: 0px;
+    }
+
+    .listado-estudios{
+        display: flex;
+        overflow-x: auto;
+        width: calc(100% + 75px);
+        padding-left: 50px;
+        margin-left: -50px;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .contenido-secciones {
+        width: 80%;
+    }
+}

@@ -1,0 +1,171 @@
+.contenedorCentro{
+    width: 80%;
+    display: block;
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    margin: 0 10%;
+}
+.botonEdit {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 15px;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+}
+.botonEdit i {
+    color: white;
+    margin: 5px 3px;
+}
+.contenedorCentral{
+    position: absolute;
+    top: 33%;
+    left: 0%;
+    width: 100%;
+    z-index: 7;
+}
+#contenedorCentral{
+    padding: 0px 60px;
+    margin: 0px auto;
+}
+.logoCentral{
+    position: absolute;
+    top: 26%;
+    left: 35%;
+    z-index: 3;
+}
+#logoCentral{
+    width: 400px;
+}
+.titular{
+    display: block;
+    position: relative;
+}
+.diego{
+    display: inline-block;
+    color: white;
+    font-family: League Spartan, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 0;
+}
+.cajaRol {
+    margin: auto;
+    float: left;    
+}
+.rol{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: linear-gradient(270deg,#f06449,#ef3636);
+}
+.btn-primary{
+    background: linear-gradient(270deg,#f06449,#ef3636);
+    border: 0px;
+}
+.btn-success{
+    background: linear-gradient(270deg, #0379D6, #101b3b);
+    color: white;
+}
+
+/* IMAGENES ANIMADAS */
+.imagenes{
+    width: 25px;
+    position: absolute;
+}
+/* TRIANGULOS */
+#triangulo1{
+    left: 92%;
+    top: 13%;
+}
+#triangulo2{
+    left: 75%;
+    top: 74%;
+}
+#triangulo3{
+    left: 5%;
+    top: 32%;
+}
+/* CUADRADOS */
+#cuadrado1{
+    left: 89%;
+    top: 20%;
+}
+#cuadrado2{
+    left: 72.5%;
+    top: 80%;
+}
+#cuadrado3{
+    left: 2.5%;
+    top: 38%;
+}
+/* CIRCULOS */
+#circulo1{
+    left: 95%;
+    top: 20%;
+}
+#circulo2{
+    left: 77.5%;
+    top: 80%;
+}
+#circulo3{
+    left: 7%;
+    top: 38%;
+}
+/* EQUIS */
+#equis1{
+    left: 92%;
+    top: 27%;
+}
+#equis2{
+    left: 75%;
+    top: 86%;
+}
+#equis3{
+    left: 5%;
+    top: 44%;
+}
+/* FIN DE IMAGENES ANIMADAS */
+
+@media only screen and (max-width: 900px){
+    .diego{
+        font-size: 72px;
+    }
+    .imagenesAnimadas {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px){
+    .diego{
+        font-size: 64px;
+    }
+    .rol {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 576px){
+    #logoCentral{
+        width: 100%;
+    }
+    .diego{
+        font-size: 28px;
+    }
+    .descripcion{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .contenedorCentral{
+        width: 95%;
+    }
+    .rol {
+        font-size: 10px;
+    }
+}

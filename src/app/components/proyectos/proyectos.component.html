@@ -1,0 +1,31 @@
+
+<div id="proyectos" class="seccion-proyectos">
+    <div class="barra">
+        <h2 class="titulos-secciones">Proyectos</h2>
+        <div>
+            <button type="button" class="botonEdit" style="border: none" (click)="crear()" *ngIf="verif"> 
+                <i class="fas fa-plus" style="color: green"></i>
+            </button>
+        </div>
+    </div>
+    <div class="caja-proyectos">
+        <div class="panel" *ngFor="let pro of proyecto">
+            <img src={{pro.imagen}}>
+            <div class="cajaTexto">
+                <div class="caja">
+                    <h2>{{pro.titulo}}</h2>
+                    <div>
+                        <button type="button" class="botonEdit" (click)="editar(pro.id)" *ngIf="verif">
+                            <i class="fas fa-pen"></i>
+                        </button>
+                        <button type="button" class="botonEdit" (click)="borrar(pro.id)" *ngIf="verif"> 
+                            <i class="fas fa-times" style="color: red; font-size: 20px"></i>
+                        </button>
+                    </div>
+                </div>
+                <p>{{pro.descripcion}}</p>
+                <a href="{{pro.link}}" target="_blank">{{pro.link}}</a>
+            </div>
+        </div>    
+    </div>
+</div>

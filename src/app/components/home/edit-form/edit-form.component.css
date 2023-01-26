@@ -1,0 +1,81 @@
+
+.login {
+    display: flex;
+    flex-direction: row;
+}
+.botonEdit {
+    background-color: transparent;
+    border: none;
+}
+.botonEdit i {
+    font-size: 30px;
+    color: red;
+}
+.modalCaja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+.login>h2 {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.login form {
+    color: #0379D6;
+}
+.campos{
+    margin-bottom: 15px;   
+}
+.campos label {
+    color: #0379D6;
+}
+.footer {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 1024px) { 
+    .footer button {
+        font-size: 12px;
+    }
+    .formulario {
+        min-width: 40%;
+    }
+}
+@media only screen and (max-width: 900px) { 
+    .footer button {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 768px) { 
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .formulario {
+        min-width: 50%;
+    }
+}
+@media only screen and (max-width: 576px) { 
+    .footer button {
+        font-size: 12px;
+    }
+    .formulario {
+        min-width: 70%;
+    }
+}
+@media only screen and (max-width: 360px) { 
+    .footer button {
+        font-size: 12px;
+    }
+    .formulario {
+        min-width: 100%;
+    }
+}

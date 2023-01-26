@@ -1,0 +1,54 @@
+<div class="formulario">
+    <div class="modalCaja">
+        <div class="login">
+            <h2>Editar registro de {{estudio.titulo}}</h2>                 
+            <div>
+                <a routerLink="">
+                    <button type="button" class="botonEdit">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <form class="col" [formGroup]="editForm" (ngSubmit)="editEstudio(editForm.value)">
+            <div class="cajaForm">
+                <div>
+                    <div class="campos">
+                        <label for="titulo" class="col-form-label">Titulo</label>
+                        <input type="text"  formControlName="titulo" class="form-control" [(ngModel)]="estudio.titulo">
+                    </div>
+                    <div class="campos">
+                        <label for="link" class="col-form-label">link</label>
+                        <input type="text" formControlName="link" class="form-control" [(ngModel)]="estudio.link">
+                    </div>
+                    <div class="campos">
+                        <label for="imagen" class="col-form-label">Imagen</label>
+                        <input type="text" formControlName="imagen" class="form-control" [(ngModel)]="estudio.imagen">
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="campos">
+                        <label for="fechaInicio" class="col-form-label">Fecha de Inicio</label>
+                        <input type="text" formControlName="fechaInicio" class="form-control" placeholder="YYYY-MM-DD" [(ngModel)]="estudio.fechaInicio">
+                    </div>
+                    <div class="campos">
+                        <label for="fechaFin" class="col-form-label">Fecha de Fin</label>
+                        <input type="text" formControlName="fechaFin" class="form-control" placeholder="YYYY-MM-DD" [(ngModel)]="estudio.fechaFin">
+                    </div>
+                </div>
+                <div>
+                    <div class="campos">
+                        <label for="descripcion" class="col-form-label">Descripción</label>
+                        <textarea class="form-control" formControlName="descripcion" cols="30" rows="8" [(ngModel)]="estudio.descripcion"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
+

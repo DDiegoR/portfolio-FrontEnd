@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #1c1d25;
+    counter-reset: section;
+    min-height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'League Spartan', sans-serif;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.enlaces{
+  color: #b0b2c3;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.enlaces:hover{
+  color: #0379d6 !important;
+  text-decoration: none;
+}
+/* SCROLL */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1c1d25;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #b0b2c3;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid;  /* creates padding around scroll thumb */
+  }
+/* FIN SCROLL */
+
+/* SECCIONES GENERAL */
+.titulos-secciones{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 10px 0px 40px;
+  font-family: League Spartan,Helvetica,Arial,sans-serif;
+  color: #0379D6;
+  white-space: nowrap;
+}
+.titulos-secciones::after{
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: 20px;
+  height: 1px;
+  width: 315px;
+  background-color: #0379D6;
+}
+/* FIN SECCIONES GENERAL */

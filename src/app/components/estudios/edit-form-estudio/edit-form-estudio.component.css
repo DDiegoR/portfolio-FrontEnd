@@ -1,0 +1,95 @@
+.formulario {
+    width: 100%;
+}
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.botonEdit {
+    background-color: transparent;
+    border: none;
+}
+.botonEdit i {
+    font-size: 30px;
+    color: red;
+}
+.modalCaja{
+    width: 70%;
+    padding-top: 5%;
+    margin: auto;
+}
+h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+.login>h2 {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.login form {
+    color: #0379D6;
+}
+.error {
+    color: red;
+}
+.campos{
+    margin-bottom: 15px;
+}
+.campos label {
+    color: #0379D6;
+}
+.footer {
+    margin-top: 50px;
+}
+
+.cajaForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) { 
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 900px) { 
+    .footer button {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 768px) { 
+    .cajaForm { 
+        flex-direction: column;
+    }
+    .formulario {
+        width: 80%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 576px) { 
+    .formulario {
+        width: 100%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 360px) { 
+    .modalCaja {
+        margin: 0;
+        width: 95%;
+    }
+    .formulario {
+        width: 100%;
+    }
+    .footer button {
+        font-size: 12px;
+    }
+}

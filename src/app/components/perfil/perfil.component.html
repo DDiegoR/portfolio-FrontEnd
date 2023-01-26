@@ -1,0 +1,26 @@
+<div class="cajaGrande">
+    <div class="header">
+        <h2>Perfil</h2>
+        <div>
+            <button type="button" class="botonEdit" routerLink="">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <div class="boddy">
+        <div class="imagen">
+            <img class="imagenPerfil" src="assets\imagenes\messi.jpg" alt="">
+        </div>
+        <h2>{{user.nombreUsuario}}</h2>
+        <div class="info">
+            <h5>Nombre: <p class="dato">{{user.nombre}}</p></h5>
+            <h5>Email: <p class="dato">{{user.email}}</p></h5>
+            <!-- 
+                Nombre de usuario: YoProgramo
+                Contraseña: #YoProgramo
+             -->
+        </div>
+    </div>
+</div>
+
+

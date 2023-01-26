@@ -1,0 +1,114 @@
+.seccion-proyectos{
+    padding: 100px 20px 50px 10%;
+    margin: 0px auto;
+    height: 100%;
+}
+.listaPanel{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.listaPanel li{
+    margin-bottom: 135px;
+}
+.panel{
+    display: block;
+    width: 80%;
+    opacity: 1;
+    height: 100%;
+    background-color: #1C1D25;
+    position: relative;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel img{
+    width: 100%;
+}
+.listaPanel li:nth-child(even) .panel .tituloPanel{
+    left: auto;
+    text-align: right;
+    right: 90px;
+}
+.botonProyecto{
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+}
+.cajaTexto{
+    width: 100%;
+}
+.cajaTexto h2{
+    padding: 20px 20px 0px;
+    color: #E8563A;
+}
+.cajaTexto p {
+    padding: 0 40px;
+    font-size: 20px;
+    color: white;
+}
+.cajaTexto h6 {
+    font-size: 16px;
+    padding: 10px 40px;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.botonEdit {
+    background-color: transparent;
+    border: none;
+}
+.botonEdit i {
+    color: white;
+    margin: 5px 3px;
+}
+.cajaTexto a {
+    color: wheat;
+    padding-left: 40px;
+}
+.caja {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px){
+    .cajaTexto h2{
+        font-size: 24px;
+    }
+    .cajaTexto p{
+        font-size: 16px;
+    }
+    .cajaTexto h6{
+        font-size: 12px;
+    }
+    .seccion-proyectos{
+        padding: 100px 5% 50px 5%;
+    }   
+    .panel {
+        width: 100%;
+        margin: 0;
+    }  
+}
+@media only screen and (max-width: 576px){ 
+    .cajaTexto p {
+        padding: 0;
+    }
+    .cajaTexto h2 {
+        padding-left: 0;
+    }
+    .cajaTexto h6 {
+        padding-left: 0;
+    }
+}

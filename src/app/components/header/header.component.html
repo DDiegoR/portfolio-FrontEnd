@@ -1,0 +1,23 @@
+<nav class="barraNavegacion">
+    <div class="logos">
+        <div class="logo">
+            <a routerLink=""><img id="logo" src="assets/imagenes/LogoDR-white.png" alt="logo"></a>
+        </div>
+        <div class="arg-programa">
+            <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank">
+                <img id="arg-programa" src="assets/imagenes/APLogo-20-20.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="contenedor-nav">
+        <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">
+            <i class='far fa-user-circle' style="color: #B0B2C3; font-size:30px"></i>
+        </button>
+        <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">
+            <i class='fas fa-sign-out-alt' style="color: red; font-size:30px"></i>
+        </button>  
+        <button type="button" class="btn btn-outline-light" (click)="perfil()" *ngIf="isLogged">
+            <i class='fas fa-user-alt' style="color: #0379D6; font-size:26px"></i>
+        </button> 
+    </div>
+</nav>

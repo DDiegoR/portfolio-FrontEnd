@@ -1,0 +1,35 @@
+<div class="modalCaja">
+    <div class="login">
+        <h2>Editar Sección Home</h2>                 
+        <div>
+            <a routerLink="">
+                <button type="button" class="botonEdit">
+                    <i class="fas fa-times"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+    <form class="col-3 formulario" [formGroup]="editForm" (ngSubmit)="editHome(editForm.value)">
+        <div class="campos">
+            <label for="nombre" class="col-form-label">Nombre</label>
+            <input type="text"  formControlName="nombre" class="form-control" [(ngModel)]="persona.nombre" readonly>
+        </div>
+        <div class="campos">
+            <label for="apellido" class="col-form-label">Apellido</label>
+            <input type="text" formControlName="apellido" class="form-control" [(ngModel)]="persona.apellido" readonly>
+        </div>
+        <div class="campos">
+            <label for="imagen" class="col-form-label">Imagen</label>
+            <input type="text" formControlName="imagen" class="form-control" [(ngModel)]="persona.imagen">
+        </div>
+        <!-- Rol -->
+        <div class="campos">
+            <label for="rolTrabajo" class="col-form-label">Rol</label>
+            <input type="text" formControlName="rolTrabajo" class="form-control" [(ngModel)]="persona.rolTrabajo">
+        </div>
+        
+        <div class="footer">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+    </form>
+</div>

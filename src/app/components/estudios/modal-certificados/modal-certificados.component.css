@@ -1,0 +1,25 @@
+.modalc {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #1c1d25;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+
+.modalh {
+    position: absolute;;
+    top: 5%;
+    right: 4%;
+}
+
+@media only screen and (max-width: 576px) {
+    .modalb img {
+        width: 100%;
+    }
+}

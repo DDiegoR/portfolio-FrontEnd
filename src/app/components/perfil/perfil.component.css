@@ -1,0 +1,63 @@
+.cajaGrande {
+    position: relative;
+    top: 15vh;
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #0379D6;
+}
+.header h2 {
+    color: white;
+    margin: 0;
+}
+
+.boddy {
+    padding: 10px;
+}
+.imagen {
+    text-align: center;
+}
+.imagenPerfil {
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+}
+.boddy h2 {
+    text-align: center;
+    color: #0379D6;
+}
+.info {
+    color: black;
+    margin-top: 20px;
+}
+.dato {
+    display: inline;
+    color: #0379D6;
+}
+.footer {
+    background-color: #0379D6;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px;
+    text-align: right;
+}
+.botonEdit {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+.botonEdit i {
+    font-size: 20px;
+    color: white;
+    margin: 5px 3px;
+}
+

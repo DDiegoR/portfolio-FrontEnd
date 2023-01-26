@@ -1,0 +1,37 @@
+<div class="formulario">
+    <div class="modalCaja">
+        <div class="login">
+            <h2>Crear Experiencia</h2>                 
+            <div>
+                <a routerLink="">
+                    <button type="button" class="botonEdit">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <form class="col" [formGroup]="nuevoForm" (ngSubmit)="crearTecno(nuevoForm.value)">
+            <div class="cajaForm">
+                <div class="campos">
+                    <label for="titulo" class="col-form-label">Titulo</label>
+                    <input type="text" class="form-control" formControlName="titulo">
+                </div>
+                <div class="campos">
+                    <label for="porcentaje" class="col-form-label">Porcentaje</label>
+                    <input type="text" class="form-control" formControlName="porcentaje">
+                </div>
+                <div class="campos">
+                    <label for="imagen" class="col-form-label">Imagen</label>
+                    <input type="text" class="form-control" formControlName="imagen">
+                </div>
+            </div>
+            
+            <div class="footer">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
