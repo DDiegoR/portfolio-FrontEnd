@@ -9,7 +9,7 @@ import { skills } from '../model/skills.model';
 })
 export class SkillsService {
 
-  url = 'http://localhost:8080/skills/';
+  url = 'https://portfolio-backend-bm2j.onrender.com/skills/';
 
   constructor(private http: HttpClient) { }
 

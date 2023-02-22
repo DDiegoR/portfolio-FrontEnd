@@ -9,7 +9,7 @@ import { experiencia } from '../model/experiencia.model';
 })
 export class ExperienciaService {
 
-  url = 'http://localhost:8080/experiencias/';
+  url = 'https://portfolio-backend-bm2j.onrender.com/experiencias/';
 
   constructor(private http: HttpClient) { }
 

@@ -9,7 +9,7 @@ import { estudio } from '../model/estudio.model';
 })
 export class EstudioService {
 
-  url = 'http://localhost:8080/estudios/';
+  url = 'https://portfolio-backend-bm2j.onrender.com/estudios/';
 
   constructor(private http: HttpClient) { }
 
